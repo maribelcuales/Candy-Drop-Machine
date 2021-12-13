@@ -17,6 +17,11 @@ body, html {
   overflow: scroll;
   text-align: center;
   overflow: hidden;
+  position: absolute; 
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px; 
 }
 
 .container {
