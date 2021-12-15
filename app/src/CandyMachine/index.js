@@ -32,6 +32,10 @@ const CandyMachine = ({ walletAddress }) => {
   // New state property 
   const [mints, setMints] = useState([]); 
 
+  // Add these two state properties 
+  const [isMinting, setIsMinting] = useState(false); 
+  const [isLoadingMints, setIsLoadingMints] = useState(false);
+
   // Actions
   const fetchHashTable = async (hash, metadataEnabled) => {
     const connection = new web3.Connection(
