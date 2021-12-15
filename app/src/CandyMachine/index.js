@@ -26,6 +26,12 @@ const MAX_SYMBOL_LENGTH = 10;
 const MAX_CREATOR_LEN = 32 + 1 + 1;
 
 const CandyMachine = ({ walletAddress }) => {
+  // State property 
+  const [machineStats, setMachineStats] = useState(null); 
+
+  // New state property 
+  const [mints, setMints] = useState([]); 
+
   // Actions
   const fetchHashTable = async (hash, metadataEnabled) => {
     const connection = new web3.Connection(
